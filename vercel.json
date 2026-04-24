@@ -1,4 +1,5 @@
 {
-  "buildCommand": "bun run build",
-  "outputDirectory": ".vinxi/output/public"
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }

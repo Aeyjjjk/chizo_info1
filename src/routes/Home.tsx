@@ -1,30 +1,29 @@
-import { createFileRoute } from "@tanstack/react-router";
-import heroBg from "@/assets/hero-bg.jpg";
-import jordanPortrait from "@/assets/jordan-hero.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import heroBg from "../assets/hero-bg.jpg";
+import jordanPortrait from "../assets/jordan-hero.jpg";
+import gallery1 from "../assets/gallery-1.jpg";
+import gallery2 from "../assets/gallery-2.jpg";
+import gallery3 from "../assets/gallery-3.jpg";
+import gallery4 from "../assets/gallery-4.jpg";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "Jordan — Remote support that scales with you" },
-      {
-        name: "description",
-        content:
-          "Jordan is a remote Social Media Manager, Virtual Assistant, and Customer Support Specialist helping online businesses stay organized, responsive, and visible.",
-      },
-      { property: "og:title", content: "Jordan — Remote support that scales with you" },
-      {
-        property: "og:description",
-        content:
-          "Remote Social Media Manager, Virtual Assistant, and Customer Support Specialist for online businesses.",
-      },
-    ],
-  }),
-});
+// export const Route = createFileRoute("/")({
+//   component: Index,
+//   head: () => ({
+//     meta: [
+//       { title: "Jordan — Remote support that scales with you" },
+//       {
+//         name: "description",
+//         content:
+//           "Jordan is a remote Social Media Manager, Virtual Assistant, and Customer Support Specialist helping online businesses stay organized, responsive, and visible.",
+//       },
+//       { property: "og:title", content: "Jordan — Remote support that scales with you" },
+//       {
+//         property: "og:description",
+//         content:
+//           "Remote Social Media Manager, Virtual Assistant, and Customer Support Specialist for online businesses.",
+//       },
+//     ],
+//   }),
+// });
 
 const services = [
   {
@@ -68,8 +67,8 @@ const gallery = [
   { src: gallery4, alt: "Hands typing on a laptop in a coffee shop", caption: "Working remote", span: "wide" as const },
 ];
 
-function Index() {
-  return (
+export default function Home() {
+    return (
     <main className="relative min-h-screen overflow-hidden" style={{ background: "var(--blue-night)" }}>
       {/* ───────── HERO ───────── */}
       <section className="relative isolate min-h-screen flex items-center justify-center px-6 overflow-hidden">
