@@ -70,7 +70,7 @@ const gallery = [
 export default function Home() {
     return (
     <main className="relative min-h-screen overflow-hidden" style={{ background: "var(--blue-night)" }}>
-      {/* ───────── HERO ───────── */}
+      {/* ───────── HERO ─────── */}
       <section className="relative isolate min-h-screen flex items-center justify-center px-6 overflow-hidden">
         {/* Background image — Jordan portrait */}
         <div
