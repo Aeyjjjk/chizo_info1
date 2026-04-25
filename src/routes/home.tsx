@@ -1,9 +1,8 @@
 //import heroBg from "../assets/hero-bg.jpg";
-import gallery1 from "../assets/gallery-1.jpg";
-import gallery2 from "../assets/gallery-2.jpg";
-import gallery3 from "../assets/gallery-3.jpg";
-import gallery4 from "../assets/gallery-4.jpg";
 import profile from "../assets/profile.jpg";
+import profile1 from "../assets/profile1.jpg";
+import profile2 from "../assets/profile2.jpg";
+import eye2 from "../assets/eye2.jpg";
 import { Linkedin, Instagram, Facebook, MessageCircle } from "lucide-react";
 // import "../styles.css";
 
@@ -89,10 +88,10 @@ const tools = [
   "OneDrive",
 ];
 const gallery = [
-  { src: gallery1, alt: "Jordan working at her home office desk", caption: "Home base · Austin", span: "tall" as const },
-  { src: gallery2, alt: "Minimal flatlay of laptop, notebook and coffee", caption: "Daily setup", span: "wide" as const },
-  { src: gallery3, alt: "Jordan smiling on a video call with headphones", caption: "Client check-in", span: "tall" as const },
-  { src: gallery4, alt: "Hands typing on a laptop in a coffee shop", caption: "Working remote", span: "wide" as const },
+  { src: profile2, alt: "", caption: "Home base", span: "tall" as const },
+  { src: profile, alt: "", caption: "Working remote", span: "wide" as const },
+  { src: profile1, alt: "", caption: "Client check-in", span: "tall" as const },
+  { src: eye2, alt: "", caption: "OPTOMETRIST", span: "wide" as const },
 ];
 
 export default function Home() {
@@ -429,16 +428,16 @@ export default function Home() {
             <div className="flex items-center gap-3 mb-5">
               <span className="accent-bar" />
               <span className="text-xs uppercase tracking-[0.3em]" style={{ color: "var(--red-glow)" }}>
-                04 · About & Contact
+                04 · Contact
               </span>
             </div>
             <h2 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
-              Let's build something <span style={{ color: "var(--red-glow)" }}>calm</span>.
+              Let’s support your business — <span style={{ color: "var(--red-glow)" }}>Remotely</span>.
             </h2>
           </div>
 
           <p className="text-xl md:text-2xl leading-relaxed max-w-3xl" style={{ color: "rgba(245,245,247,0.85)" }}>
-            Based in Austin, TX (remote only). Previously supported e-commerce, creators, and SaaS startups. Always asynchronous-friendly.
+            Previously supported e-commerce, creators, and SaaS startups. Always asynchronous-friendly.
           </p>
 
           <div className="glass-card mt-12 p-8 md:p-10" style={{ borderRadius: 8, borderLeftColor: "var(--red)" }}>
