@@ -1,9 +1,10 @@
 //import heroBg from "../assets/hero-bg.jpg";
-import jordanPortrait from "../assets/jordan-hero.jpg";
 import gallery1 from "../assets/gallery-1.jpg";
 import gallery2 from "../assets/gallery-2.jpg";
 import gallery3 from "../assets/gallery-3.jpg";
 import gallery4 from "../assets/gallery-4.jpg";
+import profile from "../assets/profile.jpg";
+import { Linkedin, Instagram, Facebook, MessageCircle } from "lucide-react";
 // import "../styles.css";
 
 // export const Route = createFileRoute("/")({
@@ -28,39 +29,65 @@ import gallery4 from "../assets/gallery-4.jpg";
 
 const services = [
   {
-    num: "01",
-    title: "Social Media Manager",
-    summary: "I keep your channels active, on-brand, and measurably growing.",
-    bullets: [
-      "Content calendar management",
-      "Engagement & community replies",
-      "Analytics reporting (weekly)",
-    ],
-  },
-  {
-    num: "02",
-    title: "Virtual Assistant",
-    summary: "I take the day-to-day off your plate so you can focus on the work that matters.",
-    bullets: [
-      "Email & calendar management",
-      "File organization (Drive/Dropbox)",
-      "Research & data entry",
-    ],
-  },
-  {
-    num: "03",
-    title: "Customer Support",
-    summary: "I turn customer questions into clear, fast, on-brand answers.",
-    bullets: [
-      "Email & chat ticket resolution (24h response)",
-      "Refund/return processing",
-      "FAQ documentation",
-    ],
-  },
+  num: "01",
+  title: "Social Media Manager",
+  summary: "I manage your social presence with consistent engagement, fast responses, and data-driven growth.",
+  bullets: [
+    "Handled customer inquiries across social platforms (Facebook, Instagram, X) with fast response times",
+    "Built strong audience relationships through active engagement and clear communication",
+    "Used analytics and feedback to improve engagement and customer satisfaction rates",
+  ],
+},
+{
+  num: "02",
+  title: "Virtual Assistant",
+  summary: "I support your daily operations with organized systems, research, and efficient task management.",
+  bullets: [
+    "Managed email, scheduling, and client follow-ups using Google Workspace and CRM tools",
+    "Performed research, data entry, and documentation to support remote operations",
+    "Optimized workflows and introduced systems that improved team efficiency and onboarding",
+  ],
+},
+{
+  num: "03",
+  title: "Customer Support",
+  summary: "I deliver fast, empathetic, and solution-driven support that keeps customers satisfied and loyal.",
+  bullets: [
+    "Resolved high-volume inquiries (5,000+ users) via email, chat, and phone with 95–98% satisfaction",
+    "Handled complaints, payment issues, and technical troubleshooting across fintech and real estate",
+    "Used CRM tools (Zendesk, Zoho, HubSpot) to track, resolve, and improve customer experience",
+  ],
+},
 ];
 
-const tools = ["Slack", "Trello", "Canva", "Zendesk", "Google Workspace"];
-
+const tools = [
+  "Zendesk",
+  "Zoho CRM",
+  "Freshdesk",
+  "HubSpot",
+  "Slack",
+  "Google Workspace",
+  "Microsoft 365",
+  "Zoom",
+  "Google Meet",
+  "Aircall",
+  "RingCentral",
+  "WhatsApp Business",
+  "Facebook Business Suite",
+  "Calendly",
+  "Asana",
+  "Trello",
+  "ClickUp",
+  "Monday.com",
+  "Confluence",
+  "SurveyMonkey",
+  "Google Forms",
+  "ManyChat",
+  // "ChatGPT",
+  "Dropbox",
+  "Google Drive",
+  "OneDrive",
+];
 const gallery = [
   { src: gallery1, alt: "Jordan working at her home office desk", caption: "Home base · Austin", span: "tall" as const },
   { src: gallery2, alt: "Minimal flatlay of laptop, notebook and coffee", caption: "Daily setup", span: "wide" as const },
@@ -77,10 +104,10 @@ export default function Home() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url(${jordanPortrait})`,
+            backgroundImage: `url(${profile})`,
             backgroundSize: "cover",
             backgroundPosition: "center right",
-            opacity: 0.55,
+            opacity: 1,
           }}
         />
         {/* Dark gradient veil — stronger on left for text legibility */}
@@ -117,7 +144,7 @@ export default function Home() {
                 display: "inline-block",
               }}
             />
-            <span className="text-sm tracking-[0.3em] font-semibold uppercase">Jordan</span>
+            <span className="text-sm tracking-[0.3em] font-semibold uppercase">Dr. Chizo</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm tracking-wide fade-in-up delay-1" style={{ color: "rgba(245,245,247,0.75)" }}>
             <a href="#services" className="hover:text-[color:var(--red-glow)] transition-colors">Services</a>
@@ -153,7 +180,7 @@ export default function Home() {
           </h1>
 
           <p className="fade-in-up delay-2 mt-8 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: "rgba(245,245,247,0.78)" }}>
-            I'm Jordan — I help online businesses stay organized, responsive, and visible.
+            I'm Aduba Chizo — I help online businesses stay organized, responsive, and visible.
           </p>
 
           <div className="fade-in-up delay-3 mt-10 flex items-center justify-center gap-4 flex-wrap">
@@ -162,6 +189,53 @@ export default function Home() {
             </a>
             <a href="#services" className="btn-ghost inline-flex">See what I do</a>
           </div>
+          {/* Social Media Icons */}
+<div className="fade-in-up delay-3 mt-6 flex items-center justify-center gap-5">
+  
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/chizo-aduba-od-mnoa-19256396"
+    target="_blank"
+    rel="noreferrer"
+    className="hover:scale-110 transition-transform"
+    style={{ color: "var(--purple-glow)" }}
+  >
+    <Linkedin size={22} />
+  </a>
+
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/2348063292936"
+    target="_blank"
+    rel="noreferrer"
+    className="hover:scale-110 transition-transform"
+    style={{ color: "var(--red-glow)" }}
+  >
+    <MessageCircle size={22} />
+  </a>
+
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/share/1FbwSzzjAh"
+    target="_blank"
+    rel="noreferrer"
+    className="hover:scale-110 transition-transform"
+    style={{ color: "var(--grey-bg)" }}
+  >
+    <Facebook size={22} />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/dr_chizo?igsh=MWtrdXUxb3RpYTBncw"
+    target="_blank"
+    rel="noreferrer"
+    className="hover:scale-110 transition-transform"
+    style={{ color: "var(--purple-glow)" }}
+  >
+    <Instagram size={22} />
+  </a>
+</div>
 
           <div className="fade-in-up delay-4 mt-20 flex items-center justify-center gap-6 text-xs uppercase tracking-[0.25em]" style={{ color: "rgba(245,245,247,0.5)" }}>
             <span>Scroll</span>
@@ -378,7 +452,7 @@ export default function Home() {
                   className="text-2xl md:text-3xl font-semibold tracking-tight hover:opacity-80 transition-opacity"
                   style={{ color: "var(--grey-bg)" }}
                 >
-                  virtualjordan@emailplace.com
+                  doc.chizo@gmail.com
                 </a>
               </div>
               <a
@@ -391,7 +465,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16 flex items-center justify-between text-xs uppercase tracking-[0.3em]" style={{ color: "rgba(245,245,247,0.4)" }}>
-            <span>© Jordan · Remote</span>
+            <span>© Chizo · Remote</span>
             <span className="flex items-center gap-2">
               <span style={{ width: 6, height: 6, borderRadius: 999, background: "var(--red)" }} />
               Available for new work
