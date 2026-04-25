@@ -1,5 +1,5 @@
 //import heroBg from "../assets/hero-bg.jpg";
-import jordanPortrait from "../assets/jordan-hero.jpg";
+// import jordanPortrait from "../assets/jordan-hero.jpg";
 import gallery1 from "../assets/gallery-1.jpg";
 import gallery2 from "../assets/gallery-2.jpg";
 import gallery3 from "../assets/gallery-3.jpg";
@@ -77,7 +77,7 @@ export default function Home() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url(${jordanPortrait})`,
+            // backgroundImage: `url(${jordanPortrait})`,
             backgroundSize: "cover",
             backgroundPosition: "center right",
             opacity: 0.55,
